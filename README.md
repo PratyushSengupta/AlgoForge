@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0905-sort-array-by-parity](https://github.com/PratyushSengupta/AlgoForge/tree/master/0905-sort-array-by-parity) |
+| [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 ## Two Pointers
 |  |
 | ------- |
@@ -13,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0905-sort-array-by-parity](https://github.com/PratyushSengupta/AlgoForge/tree/master/0905-sort-array-by-parity) |
+| [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 ## String
 |  |
 | ------- |
@@ -21,8 +23,29 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/PratyushSengupta/AlgoForge/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
+| [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 ## Bracket Sequences
 |  |
 | ------- |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/PratyushSengupta/AlgoForge/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
+## Binary Search
+|  |
+| ------- |
+| [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
+## Divide and Conquer
+|  |
+| ------- |
+| [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
+## Segment Tree
+|  |
+| ------- |
+| [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
+## Monotonic Stack
+|  |
+| ------- |
+| [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 <!---LeetCode Topics End-->
