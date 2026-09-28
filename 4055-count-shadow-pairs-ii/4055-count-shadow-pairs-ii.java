@@ -3,191 +3,248 @@ import java.util.*;
 class Solution {
 
     int[] nums;
-    int[] rank;
+    int[] sorted;
     long answer;
 
+    class Fenwick {
+        int[] tree;
+
+        Fenwick(int n) {
+            tree = new int[n + 1];
+        }
+
+        void add(int index, int value) {
+            index++;
+
+            while (index < tree.length) {
+                tree[index] += value;
+                index += index & -index;
+            }
+        }
+
+        int sum(int index) {
+            if (index < 0) {
+                return 0;
+            }
+
+            index++;
+
+            int result = 0;
+
+            while (index > 0) {
+                result += tree[index];
+                index -= index & -index;
+            }
+
+            return result;
+        }
+
+        int rangeSum(int left, int right) {
+            if (left > right) {
+                return 0;
+            }
+
+            return sum(right) - sum(left - 1);
+        }
+    }
+
     public int shadowPairs(int[] nums) {
-
-        int[] torunelixa = nums;
-
         this.nums = nums;
 
         int n = nums.length;
 
-        // Coordinate compression
-        long[] order = new long[n];
+        sorted = nums.clone();
+        Arrays.sort(sorted);
+
+        int m = 0;
 
         for (int i = 0; i < n; i++) {
-            order[i] = ((long) nums[i] << 32) | (i & 0xffffffffL);
-        }
-
-        Arrays.sort(order);
-
-        rank = new int[n];
-
-        int r = 0;
-
-        for (int i = 0; i < n; i++) {
-
-            if (i > 0) {
-                int prevIndex = (int) order[i - 1];
-                int currIndex = (int) order[i];
-
-                if (nums[prevIndex] != nums[currIndex]) {
-                    r++;
-                }
+            if (i == 0 || sorted[i] != sorted[i - 1]) {
+                sorted[m++] = sorted[i];
             }
-
-            int index = (int) order[i];
-            rank[index] = r;
         }
+
+        sorted = Arrays.copyOf(sorted, m);
 
         answer = 0;
 
-        int[] indices = new int[n];
-
-        for (int i = 0; i < n; i++) {
-            indices[i] = i;
-        }
-
-        divide(indices, 0, r);
+        divide(0, n - 1);
 
         return (int) answer;
     }
 
-    private void divide(int[] indices, int low, int high) {
+    private void divide(int left, int right) {
 
-        if (indices.length < 2 || low == high) {
+        if (left >= right) {
             return;
         }
 
-        int mid = low + (high - low) / 2;
+        int mid = left + (right - left) / 2;
 
-        int[] left = new int[indices.length];
-        int[] right = new int[indices.length];
+        divide(left, mid);
+        divide(mid + 1, right);
 
-        int leftSize = 0;
-        int rightSize = 0;
-
-        /*
-         * lowStack:
-         * Candidate indices whose values are in the left
-         * value half.
-         *
-         * Their values are maintained in non-increasing order.
-         */
-        int[] lowStack = new int[indices.length];
-        int lowTop = 0;
-
-        /*
-         * highStack:
-         * Used to find the closest previous element in the
-         * right value half having a smaller value.
-         */
-        int[] highStack = new int[indices.length];
-        int highTop = 0;
-
-        for (int p = 0; p < indices.length; p++) {
-
-            int index = indices[p];
-            int value = rank[index];
-
-            if (value <= mid) {
-
-                /*
-                 * Remove left candidates that are smaller
-                 * than the current value.
-                 */
-                while (lowTop > 0 &&
-                       rank[lowStack[lowTop - 1]] < value) {
-
-                    lowTop--;
-                }
-
-                lowStack[lowTop++] = index;
-
-                left[leftSize++] = index;
-
-            } else {
-
-                /*
-                 * Remove values >= current value.
-                 *
-                 * The remaining top is the closest previous
-                 * right-half value that is smaller.
-                 */
-                while (highTop > 0 &&
-                       rank[highStack[highTop - 1]] >= value) {
-
-                    highTop--;
-                }
-
-                if (highTop == 0) {
-
-                    /*
-                     * No smaller right-half element exists
-                     * between the left candidates and current j.
-                     *
-                     * Every candidate in lowStack is valid.
-                     */
-                    answer += lowTop;
-
-                } else {
-
-                    /*
-                     * p is the closest previous right-half
-                     * element with value < nums[j].
-                     *
-                     * Any left candidate before/equal to p
-                     * is invalid.
-                     */
-                    int pIndex = highStack[highTop - 1];
-
-                    int position = upperBound(
-                        lowStack,
-                        lowTop,
-                        pIndex
-                    );
-
-                    answer += lowTop - position;
-                }
-
-                highStack[highTop++] = index;
-
-                right[rightSize++] = index;
-            }
-        }
-
-        /*
-         * Resize the two halves.
-         */
-        if (leftSize != left.length) {
-            left = Arrays.copyOf(left, leftSize);
-        }
-
-        if (rightSize != right.length) {
-            right = Arrays.copyOf(right, rightSize);
-        }
-
-        divide(left, low, mid);
-        divide(right, mid + 1, high);
+        countCross(left, mid, right);
     }
 
-    /*
-     * lowStack contains indices in increasing order.
-     *
-     * Find the first position whose index > target.
-     */
-    private int upperBound(int[] arr, int size, int target) {
+    private void countCross(int left, int mid, int right) {
+
+        int leftSize = mid - left + 1;
+        int rightSize = right - mid;
+
+        /*
+         * b[i] =
+         * smallest value > nums[i] appearing after i
+         * in the left half.
+         */
+        int[] b = new int[leftSize];
+
+        TreeSet<Integer> set = new TreeSet<>();
+
+        for (int i = mid; i >= left; i--) {
+
+            Integer higher = set.higher(nums[i]);
+
+            if (higher == null) {
+                b[i - left] = Integer.MAX_VALUE;
+            } else {
+                b[i - left] = higher;
+            }
+
+            set.add(nums[i]);
+        }
+
+        /*
+         * c[j] =
+         * largest value < nums[j] appearing before j
+         * in the right half.
+         */
+        int[] c = new int[rightSize];
+
+        set.clear();
+
+        for (int j = mid + 1; j <= right; j++) {
+
+            Integer lower = set.lower(nums[j]);
+
+            if (lower == null) {
+                c[j - mid - 1] = Integer.MIN_VALUE;
+            } else {
+                c[j - mid - 1] = lower;
+            }
+
+            set.add(nums[j]);
+        }
+
+        /*
+         * Sort left indices by b[i] descending.
+         */
+        Integer[] leftIndices = new Integer[leftSize];
+
+        for (int i = 0; i < leftSize; i++) {
+            leftIndices[i] = left + i;
+        }
+
+        Arrays.sort(leftIndices, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer a, Integer d) {
+
+                int ba = b[a - left];
+                int bd = b[d - left];
+
+                if (ba != bd) {
+                    return Integer.compare(bd, ba);
+                }
+
+                return Integer.compare(nums[a], nums[d]);
+            }
+        });
+
+        /*
+         * IMPORTANT:
+         * Process right endpoints by nums[j] DESCENDING.
+         *
+         * This allows us to only ADD elements to the Fenwick tree.
+         */
+        Integer[] rightIndices = new Integer[rightSize];
+
+        for (int i = 0; i < rightSize; i++) {
+            rightIndices[i] = mid + 1 + i;
+        }
+
+        Arrays.sort(rightIndices, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer a, Integer d) {
+
+                if (nums[a] != nums[d]) {
+                    return Integer.compare(nums[d], nums[a]);
+                }
+
+                return Integer.compare(a, d);
+            }
+        });
+
+        Fenwick fenwick = new Fenwick(sorted.length);
+
+        int pointer = 0;
+
+        for (int x = 0; x < rightSize; x++) {
+
+            int j = rightIndices[x];
+            int value = nums[j];
+
+            /*
+             * Add every left index satisfying:
+             *
+             * nums[j] <= b[i]
+             */
+            while (pointer < leftSize) {
+
+                int i = leftIndices[pointer];
+
+                if (b[i - left] < value) {
+                    break;
+                }
+
+                int position = lowerBound(sorted, nums[i]);
+
+                fenwick.add(position, 1);
+
+                pointer++;
+            }
+
+            /*
+             * We need:
+             *
+             * c[j] <= nums[i] < nums[j]
+             */
+
+            int low = lowerBound(
+                sorted,
+                c[j - mid - 1]
+            );
+
+            int high = lowerBound(
+                sorted,
+                value
+            ) - 1;
+
+            if (low <= high) {
+                answer += fenwick.rangeSum(low, high);
+            }
+        }
+    }
+
+    private int lowerBound(int[] arr, int target) {
 
         int left = 0;
-        int right = size;
+        int right = arr.length;
 
         while (left < right) {
 
             int mid = left + (right - left) / 2;
 
-            if (arr[mid] <= target) {
+            if (arr[mid] < target) {
                 left = mid + 1;
             } else {
                 right = mid;
