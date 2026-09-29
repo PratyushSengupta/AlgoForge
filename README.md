@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/PratyushSengupta/AlgoForge/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/PratyushSengupta/AlgoForge/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 ## Stack
 |  |
@@ -58,4 +59,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/PratyushSengupta/AlgoForge/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
+## Hash Table
+|  |
+| ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/PratyushSengupta/AlgoForge/tree/master/0017-letter-combinations-of-a-phone-number) |
+## Backtracking
+|  |
+| ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/PratyushSengupta/AlgoForge/tree/master/0017-letter-combinations-of-a-phone-number) |
 <!---LeetCode Topics End-->
