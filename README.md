@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0455-assign-cookies](https://github.com/PratyushSengupta/AlgoForge/tree/master/0455-assign-cookies) |
+| [0506-relative-ranks](https://github.com/PratyushSengupta/AlgoForge/tree/master/0506-relative-ranks) |
 | [0905-sort-array-by-parity](https://github.com/PratyushSengupta/AlgoForge/tree/master/0905-sort-array-by-parity) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/PratyushSengupta/AlgoForge/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
@@ -17,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0455-assign-cookies](https://github.com/PratyushSengupta/AlgoForge/tree/master/0455-assign-cookies) |
+| [0506-relative-ranks](https://github.com/PratyushSengupta/AlgoForge/tree/master/0506-relative-ranks) |
 | [0905-sort-array-by-parity](https://github.com/PratyushSengupta/AlgoForge/tree/master/0905-sort-array-by-parity) |
 | [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 ## String
@@ -92,4 +94,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0455-assign-cookies](https://github.com/PratyushSengupta/AlgoForge/tree/master/0455-assign-cookies) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0506-relative-ranks](https://github.com/PratyushSengupta/AlgoForge/tree/master/0506-relative-ranks) |
 <!---LeetCode Topics End-->
