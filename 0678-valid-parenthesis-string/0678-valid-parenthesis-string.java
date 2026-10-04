@@ -15,18 +15,15 @@ class Solution {
                 maxOpen--;
             } 
             else {
-                // '*' can be '(' or ')' or empty
                 minOpen--;
                 maxOpen++;
             }
 
-            // Even the maximum possible opening brackets
-            // cannot be negative
             if (maxOpen < 0) {
                 return false;
             }
 
-            // Minimum cannot remain negative
+            
             minOpen = Math.max(minOpen, 0);
         }
 
