@@ -106,4 +106,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0506-relative-ranks](https://github.com/PratyushSengupta/AlgoForge/tree/master/0506-relative-ranks) |
+## Database
+|  |
+| ------- |
+| [0175-combine-two-tables](https://github.com/PratyushSengupta/AlgoForge/tree/master/0175-combine-two-tables) |
 <!---LeetCode Topics End-->
