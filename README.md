@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0506-relative-ranks](https://github.com/PratyushSengupta/AlgoForge/tree/master/0506-relative-ranks) |
 | [0905-sort-array-by-parity](https://github.com/PratyushSengupta/AlgoForge/tree/master/0905-sort-array-by-parity) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/PratyushSengupta/AlgoForge/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/PratyushSengupta/AlgoForge/tree/master/2333-minimum-sum-of-squared-difference) |
 | [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 ## Two Pointers
 |  |
@@ -20,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/PratyushSengupta/AlgoForge/tree/master/0455-assign-cookies) |
 | [0506-relative-ranks](https://github.com/PratyushSengupta/AlgoForge/tree/master/0506-relative-ranks) |
 | [0905-sort-array-by-parity](https://github.com/PratyushSengupta/AlgoForge/tree/master/0905-sort-array-by-parity) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/PratyushSengupta/AlgoForge/tree/master/2333-minimum-sum-of-squared-difference) |
 | [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 ## String
 |  |
@@ -62,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [2333-minimum-sum-of-squared-difference](https://github.com/PratyushSengupta/AlgoForge/tree/master/2333-minimum-sum-of-squared-difference) |
 | [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 ## Divide and Conquer
 |  |
@@ -105,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/PratyushSengupta/AlgoForge/tree/master/0455-assign-cookies) |
 | [0678-valid-parenthesis-string](https://github.com/PratyushSengupta/AlgoForge/tree/master/0678-valid-parenthesis-string) |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/PratyushSengupta/AlgoForge/tree/master/1541-minimum-insertions-to-balance-a-parentheses-string) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/PratyushSengupta/AlgoForge/tree/master/2333-minimum-sum-of-squared-difference) |
 ## Quicksort
 |  |
 | ------- |
@@ -113,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0506-relative-ranks](https://github.com/PratyushSengupta/AlgoForge/tree/master/0506-relative-ranks) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/PratyushSengupta/AlgoForge/tree/master/2333-minimum-sum-of-squared-difference) |
 ## Database
 |  |
 | ------- |
