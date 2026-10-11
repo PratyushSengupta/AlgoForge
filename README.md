@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0905-sort-array-by-parity](https://github.com/PratyushSengupta/AlgoForge/tree/master/0905-sort-array-by-parity) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/PratyushSengupta/AlgoForge/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/PratyushSengupta/AlgoForge/tree/master/2333-minimum-sum-of-squared-difference) |
+| [2778-sum-of-squares-of-special-elements](https://github.com/PratyushSengupta/AlgoForge/tree/master/2778-sum-of-squares-of-special-elements) |
 | [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 ## Two Pointers
 |  |
@@ -122,4 +123,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0175-combine-two-tables](https://github.com/PratyushSengupta/AlgoForge/tree/master/0175-combine-two-tables) |
+## Enumeration
+|  |
+| ------- |
+| [2778-sum-of-squares-of-special-elements](https://github.com/PratyushSengupta/AlgoForge/tree/master/2778-sum-of-squares-of-special-elements) |
 <!---LeetCode Topics End-->
