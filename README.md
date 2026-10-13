@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2333-minimum-sum-of-squared-difference](https://github.com/PratyushSengupta/AlgoForge/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2778-sum-of-squares-of-special-elements](https://github.com/PratyushSengupta/AlgoForge/tree/master/2778-sum-of-squares-of-special-elements) |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/PratyushSengupta/AlgoForge/tree/master/2897-apply-operations-on-array-to-maximize-sum-of-squares) |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/PratyushSengupta/AlgoForge/tree/master/3727-maximum-alternating-sum-of-squares) |
 | [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 ## Two Pointers
 |  |
@@ -24,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0506-relative-ranks](https://github.com/PratyushSengupta/AlgoForge/tree/master/0506-relative-ranks) |
 | [0905-sort-array-by-parity](https://github.com/PratyushSengupta/AlgoForge/tree/master/0905-sort-array-by-parity) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/PratyushSengupta/AlgoForge/tree/master/2333-minimum-sum-of-squared-difference) |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/PratyushSengupta/AlgoForge/tree/master/3727-maximum-alternating-sum-of-squares) |
 | [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 ## String
 |  |
@@ -113,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/PratyushSengupta/AlgoForge/tree/master/1541-minimum-insertions-to-balance-a-parentheses-string) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/PratyushSengupta/AlgoForge/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/PratyushSengupta/AlgoForge/tree/master/2897-apply-operations-on-array-to-maximize-sum-of-squares) |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/PratyushSengupta/AlgoForge/tree/master/3727-maximum-alternating-sum-of-squares) |
 ## Quicksort
 |  |
 | ------- |
