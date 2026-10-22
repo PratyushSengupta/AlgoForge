@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2778-sum-of-squares-of-special-elements](https://github.com/PratyushSengupta/AlgoForge/tree/master/2778-sum-of-squares-of-special-elements) |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/PratyushSengupta/AlgoForge/tree/master/2897-apply-operations-on-array-to-maximize-sum-of-squares) |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/PratyushSengupta/AlgoForge/tree/master/3727-maximum-alternating-sum-of-squares) |
+| [3942-minimum-operations-to-sort-a-permutation](https://github.com/PratyushSengupta/AlgoForge/tree/master/3942-minimum-operations-to-sort-a-permutation) |
 | [4055-count-shadow-pairs-ii](https://github.com/PratyushSengupta/AlgoForge/tree/master/4055-count-shadow-pairs-ii) |
 ## Two Pointers
 |  |
