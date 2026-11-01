@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/PratyushSengupta/AlgoForge/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0455-assign-cookies](https://github.com/PratyushSengupta/AlgoForge/tree/master/0455-assign-cookies) |
 | [0485-max-consecutive-ones](https://github.com/PratyushSengupta/AlgoForge/tree/master/0485-max-consecutive-ones) |
 | [0506-relative-ranks](https://github.com/PratyushSengupta/AlgoForge/tree/master/0506-relative-ranks) |
@@ -165,6 +166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/PratyushSengupta/AlgoForge/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/PratyushSengupta/AlgoForge/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [2409-count-days-spent-together](https://github.com/PratyushSengupta/AlgoForge/tree/master/2409-count-days-spent-together) |
 | [3723-maximize-sum-of-squares-of-digits](https://github.com/PratyushSengupta/AlgoForge/tree/master/3723-maximize-sum-of-squares-of-digits) |
